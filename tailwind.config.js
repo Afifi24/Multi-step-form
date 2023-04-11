@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'Ubuntu': ['Ubuntu']
+      },
+      screens:{
+        'md':'964px'
+      }
+    },
   },
   plugins: [],
 }

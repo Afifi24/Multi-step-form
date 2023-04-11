@@ -18,11 +18,14 @@ const App = () => {
     setIndex(index - 1)
   }
   return (
-    <div className='h-[100vh] flex  items-center  gap-36 '>
+    <div className=' flex Hero min-h-screen  md:items-center md:justify-center md:p-10'>
+       <div className=' flex-col w-full  md:bg-white md:w-2/3 flex rounded-lg md:gap-16 md:pr-10   md:p-3 md:flex-row'>
        <Nav index={index}/>
        <Slides index={index}/>
-       <button onClick={nextItem} className='bg-blue-800 absolute bottom-4 left-[64.5%] rounded-md py-2 px-4 text-white'>  {index ===3 ? 'confirm':'Next Step'}</button>
-       <button onClick={backItem}  className={`bg-blue-800 ${index >= 1 ? 'block': 'hidden'} absolute bottom-4 left-[39%] rounded-md py-2 px-4 text-white`}>Back</button>
+       
+       <button onClick={nextItem} className='bg-blue-800 absolute bottom-4 left-[70%] rounded-md py-2 px-4 text-white'>  {index ===3 ? 'confirm':'Next Step'}</button>
+       <button onClick={backItem}  className={`bg-blue-800 ${index >= 1 ? 'block': 'hidden'} absolute bottom-4 left-[47%] rounded-md py-2 px-4 text-white`}>Back</button>
+       </div>
     </div>
   )
 }

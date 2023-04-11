@@ -5,9 +5,9 @@ const Nav = ({index}) => {
   return (
    <div>
     {/* destop */}
-     <div className='hidden md:block h-full  relative mx-10 my-auto ' >
-              <img className='   ' src={img1} alt="" />
-              <div className='absolute top-10 itmes-center justify-center left-6 flex flex-col gap-10'>
+     <div className='hidden md:block  relative  ' >
+              <img className='w-full h-full' src={img1} alt="" />
+              <div className='absolute top-10 items-start  left-6 flex flex-col gap-10'>
                   <div className='flex justify-center items-center gap-4'>
                       <div className={`w-8 h-8 ${index === 0 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>1</div>
                       <div>
@@ -39,15 +39,13 @@ const Nav = ({index}) => {
               </div>
     </div>
     {/* mobile */}
-     <div className='md:hidden relative w-full'>
-              <img className='h-full w-full' src={img2} alt="" />
+     <div className='md:hidden z-0 relative w-full'>
+              <img className='w-[100vw]' src={img2} alt="" />
               <div className='absolute flex gap-6 left-1/2 top-6 -translate-x-1/2'>
-                      <div className='w-8 h-8 rounded-full flex items-center justify-center text-white bg-red-500'>1</div>
-                      <div className='w-8 h-8 rounded-full flex items-center justify-center text-white bg-red-500'>2</div>
-                      <div className='w-8 h-8 rounded-full flex items-center justify-center text-white bg-red-500'>3</div>
-                      <div className='w-8 h-8 rounded-full flex items-center justify-center text-white bg-red-500'>4</div>
-                
-                  
+                      <div className={`w-8 h-8 ${index === 0 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>1</div>
+                      <div className={`w-8 h-8 ${index === 1 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>2</div>
+                      <div className={`w-8 h-8 ${index === 2 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>3</div>
+                      <div className={`w-8 h-8 ${index === 3 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
               </div>
      </div>
    </div>
