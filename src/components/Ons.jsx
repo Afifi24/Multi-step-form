@@ -53,7 +53,7 @@ const Ons = () => {
         <p className='text-gray-500 text-[14px] '>Add-ons help enhance your gaming experience.</p>
        </div>
        <div className='flex flex-col gap-4'>
-           <div className={`w-[430px] min-h-[60px] h-[65px] items-center rounded-lg border p-3 flex flex-row justify-between ${check ? 'border-blue-950':''}`}>
+           <div className={`w-full min-h-[60px] h-[65px] items-center rounded-lg border p-3 flex flex-row justify-between ${check ? 'border-blue-950':''}`}>
                <div className='flex items-center gap-6 flex-row '>
                 <input onClick={()=>setCheck(!check)}  className='h-4 w-4' type="checkbox" name="" id="" />
                 <div className='flex flex-col '>
