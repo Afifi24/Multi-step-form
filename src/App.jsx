@@ -24,7 +24,7 @@ const App = () => {
   const submitplan = ()=>{
     if(chosePlan === 'Arcadem' || 'Advancedm' || 'Prom' || 'Arcadey'|| 'Advancedy' || 'Proy'){
       setIndex(index + 1)
-     
+       
     }else{
       setIndex(index)
       
@@ -62,6 +62,8 @@ const App = () => {
   };
   const Submitfunction =()=>{
     submitinfo()
+
+  
   }
   return (
     <div className=' flex Hero min-h-screen  md:items-center md:justify-center md:p-10'>
@@ -69,15 +71,15 @@ const App = () => {
        <Nav index={index}/>
        <Slides setChosePlan={setChosePlan} chosePlan={chosePlan} phoneerr={phoneerr} emailerr={emailerr} setEmailerr={setEmailerr} nameerr={nameerr} setPhone={setPhone} phone={phone} email={email} setEmail={setEmail} name={name} setName={setName} index={index}/>
        {/* desktop */}
-       <div className='hidden md:block'>
+       <div className={` ${index===4 ?'hidden':''} `}>
        <button onClick={nextItem} className={`bg-blue-800 text-[14px] ${index === 3 ? 'hover:bg-blue-400':''} absolute bottom-4 left-[70%] rounded-md py-2 px-4 text-white`}>  {index ===3 ? 'confirm':'Next Step'}</button>
        <button onClick={backItem}  className={`hover:text-blue-900 duration-200 text-gray-500 ${index >= 1 ? 'block': 'hidden'} absolute bottom-4 left-[47%] rounded-md py-2 text-[14px] px-4`}>Go Back</button>
        </div>
        {/* mobile */}
-       <div className='md:hidden'>
+       {/* <div className={` ${index===4 ?'hidden':''} `}>
        <button onClick={nextItem} className='bg-blue-800 text-[13px] absolute bottom-4 right-5 rounded-md py-2 px-4 text-white'>  {index ===3 ? 'confirm':'Next Step'}</button>
        <button onClick={backItem}  className={` ${index >= 1 ? 'block': 'hidden'} absolute bottom-4 left-5 rounded-md py-2 px-4 text-gray-500 hover:text-blue-900 duration-200 font-semibold text-[13px]`}>Go Back</button>
-       </div>
+       </div> */}
        </div>
     </div>
   )

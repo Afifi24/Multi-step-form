@@ -2,6 +2,7 @@ import React from 'react'
 import Info from './Info'
 import Plan from './Plan'
 import Ons from './Ons'
+import Submit from './submit'
 import Summary from './Summary'
 const Slides = ({index,setName,name,setEmail,email,setPhone,phone,nameerr,setEmailerr,emailerr,phoneerr,chosePlan,setChosePlan}) => {
   return (
@@ -10,6 +11,7 @@ const Slides = ({index,setName,name,setEmail,email,setPhone,phone,nameerr,setEma
       {index === 1 && <Plan setChosePlan={setChosePlan} chosePlan={chosePlan}/>}
       {index === 2 && <Ons/>}
       {index === 3 && <Summary/>}
+      {index === 4 && <Submit/>}
     </div>
   )
 }

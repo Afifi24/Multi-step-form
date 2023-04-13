@@ -30,7 +30,7 @@ const Nav = ({index}) => {
                       </div>
                   </div>
                   <div className='flex justify-center items-center gap-4'>
-                  <div className={`w-8 h-8 ${index === 3 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
+                  <div className={`w-8 h-8 ${index === 3 || index ===  4 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
                       <div>
                         <p className='text-gray-300 uppercase text-[12px]'>step 4</p>
                         <h4 className='uppercase tracking-[2px] text-white font-bold text-[13px]'> summary</h4>
@@ -45,7 +45,7 @@ const Nav = ({index}) => {
                       <div className={`w-8 h-8 ${index === 0 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>1</div>
                       <div className={`w-8 h-8 ${index === 1 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>2</div>
                       <div className={`w-8 h-8 ${index === 2 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>3</div>
-                      <div className={`w-8 h-8 ${index === 3 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
+                      <div className={`w-8 h-8 ${index === 3 || 4 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
               </div>
      </div>
    </div>
