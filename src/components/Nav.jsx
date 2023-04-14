@@ -45,7 +45,7 @@ const Nav = ({index}) => {
                       <div className={`w-8 h-8 ${index === 0 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>1</div>
                       <div className={`w-8 h-8 ${index === 1 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>2</div>
                       <div className={`w-8 h-8 ${index === 2 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>3</div>
-                      <div className={`w-8 h-8 ${index === 3 || 4 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
+                      <div className={`w-8 h-8 ${index === 3 || index === 4 ? 'bg-green-500':''} rounded-full flex items-center justify-center text-white border`}>4</div>
               </div>
      </div>
    </div>

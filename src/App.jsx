@@ -72,8 +72,8 @@ const App = () => {
        <Slides setChosePlan={setChosePlan} chosePlan={chosePlan} phoneerr={phoneerr} emailerr={emailerr} setEmailerr={setEmailerr} nameerr={nameerr} setPhone={setPhone} phone={phone} email={email} setEmail={setEmail} name={name} setName={setName} index={index}/>
        {/* desktop */}
        <div className={` ${index===4 ?'hidden':''} `}>
-       <button onClick={nextItem} className={`bg-blue-800 text-[14px] ${index === 3 ? 'hover:bg-blue-400':''} absolute bottom-4 left-[70%] rounded-md py-2 px-4 text-white`}>  {index ===3 ? 'confirm':'Next Step'}</button>
-       <button onClick={backItem}  className={`hover:text-blue-900 duration-200 text-gray-500 ${index >= 1 ? 'block': 'hidden'} absolute bottom-4 left-[47%] rounded-md py-2 text-[14px] px-4`}>Go Back</button>
+       <button onClick={nextItem} className={`bg-blue-800 text-[14px] ${index === 3 ? 'hover:bg-blue-400':''} absolute bottom-8 left-[70%] md:left-[65%] md:bottom-5 rounded-md py-2 px-4 text-white`}>  {index ===3 ? 'confirm':'Next Step'}</button>
+       <button onClick={backItem}  className={`hover:text-blue-900 duration-200 text-gray-500 ${index >= 1 ? 'block': 'hidden'} absolute  md:bottom-14  bottom-8 left-[10%] md:left-[47%]  rounded-md py-2 text-[14px] px-4`}>Go Back</button>
        </div>
        {/* mobile */}
        {/* <div className={` ${index===4 ?'hidden':''} `}>
